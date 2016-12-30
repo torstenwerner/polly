@@ -17,7 +17,7 @@
         <label for="text">Text</label>
         <textarea id="text" name="text" type="text" class="pure-input-3-4" rows="5">Alexa, wie geht es dir?</textarea>
     </div>
-    <div class="pure-control-group">    
+    <div class="pure-control-group">
         <label for="voice">Stimme</label>
         <select id="voice" name="voice">
             <option selected>Marlene</option>
@@ -26,6 +26,10 @@
     </div>
     <div class="pure-controls">
         <button type="submit" class="pure-button pure-button-primary">Sprechen</button>
+        <p>
+            Dieses Formular synthetisiert deutsche Sprache mit Hilfe des <a href="https://aws.amazon.com/de/polly/">AWS-Polly-Dienstes</a>.
+            Den Code gibt es unter <a href="https://github.com/torstenwerner/polly">https://github.com/torstenwerner/polly</a>.
+        </p>
     </div>
 </fieldset>
 </form>
