@@ -3,15 +3,35 @@
 
 <head>
     <title>Polly</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY"
+        crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <form onsubmit="return submitForm(event)">
-        <input id="text" name="text" type="text" value="Alexa, wie geht es dir?">
-        <input type="submit">
-    </form>
-    <script src="/node_modules/howler/dist/howler.js"></script>
-    <script src="polly.js"></script>
+
+    <form onsubmit="return submitForm(event)" class="pure-form pure-form-aligned">
+<fieldset>
+    <div class="pure-control-group">
+        <label for="text">Text</label>
+        <input id="text" name="text" type="text" value="Alexa, wie geht es dir?" class="pure-input-3-4">
+    </div>
+    <div class="pure-controls">
+        <label for="voice-marlene" class="pure-radio">
+            <input id="voice-marlene" type="radio" name="voice" value="Marlene" checked>
+            Marlene
+        </label>
+        <label for="voice-hans" class="pure-radio">
+            <input id="voice-hans" type="radio" name="voice" value="Hans">
+            Hans
+        </label>
+        <button type="submit" class="pure-button pure-button-primary">Sprechen</button>
+    </div>
+</fieldset>
+</form>
+
+<script src="/node_modules/howler/dist/howler.js"></script>
+<script src="polly.js"></script>
 </body>
 
 </html>
