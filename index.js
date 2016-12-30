@@ -14,6 +14,9 @@ app.get('/audio', function (req, res) {
     });
 });
 
+app.use('/node_modules', express.static('node_modules'));
+app.use('/', express.static('ui'));
+
 http.listen(3000, function () {
     console.log('listening on localhost:3000');
 });
